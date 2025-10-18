@@ -1,0 +1,5 @@
+.DS_Store
+**/bin/
+**/obj/
+/build/
+# *.plist - you may want to prevent committing your launch agent plist files

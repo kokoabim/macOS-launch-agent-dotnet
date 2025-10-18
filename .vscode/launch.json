@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Launch",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/src/Kokoabim.LaunchAgent/bin/Debug/net9.0/AGENTNAME_CHANGEME",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/Kokoabim.LaunchAgent",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "logging": {
+                "moduleLoad": false,
+                "trace": false
+            }
+        }
+    ]
+}

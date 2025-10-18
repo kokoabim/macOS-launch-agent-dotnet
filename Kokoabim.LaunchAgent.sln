@@ -1,0 +1,48 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9A4888C9-DBDC-42F3-AED7-EAD63AA04853}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kokoabim.LaunchAgent.Tests", "tests\Kokoabim.LaunchAgent.Tests\Kokoabim.LaunchAgent.Tests.csproj", "{31DD3BE1-7A5D-4163-8246-17A1A22A893E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1F4C8661-D842-443D-B324-5EA0119A14B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kokoabim.LaunchAgent", "src\Kokoabim.LaunchAgent\Kokoabim.LaunchAgent.csproj", "{7EDE21FE-DA10-4C80-A334-F8B6B7F406CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kokoabim.CommandLineInterface", "..\Kokoabim.CommandLineInterface\src\Kokoabim.CommandLineInterface\Kokoabim.CommandLineInterface.csproj", "{3AFF6C8D-16F2-4A6B-9D5B-54EE10B98B96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kokoabim.CommandLineInterface.Tests", "..\Kokoabim.CommandLineInterface\tests\Kokoabim.CommandLineInterface.Tests\Kokoabim.CommandLineInterface.Tests.csproj", "{358CCC67-4BD2-4736-B55A-8542D4373207}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31DD3BE1-7A5D-4163-8246-17A1A22A893E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31DD3BE1-7A5D-4163-8246-17A1A22A893E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31DD3BE1-7A5D-4163-8246-17A1A22A893E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31DD3BE1-7A5D-4163-8246-17A1A22A893E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EDE21FE-DA10-4C80-A334-F8B6B7F406CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EDE21FE-DA10-4C80-A334-F8B6B7F406CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EDE21FE-DA10-4C80-A334-F8B6B7F406CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EDE21FE-DA10-4C80-A334-F8B6B7F406CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AFF6C8D-16F2-4A6B-9D5B-54EE10B98B96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AFF6C8D-16F2-4A6B-9D5B-54EE10B98B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AFF6C8D-16F2-4A6B-9D5B-54EE10B98B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AFF6C8D-16F2-4A6B-9D5B-54EE10B98B96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{358CCC67-4BD2-4736-B55A-8542D4373207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{358CCC67-4BD2-4736-B55A-8542D4373207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{358CCC67-4BD2-4736-B55A-8542D4373207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{358CCC67-4BD2-4736-B55A-8542D4373207}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{31DD3BE1-7A5D-4163-8246-17A1A22A893E} = {9A4888C9-DBDC-42F3-AED7-EAD63AA04853}
+		{7EDE21FE-DA10-4C80-A334-F8B6B7F406CF} = {1F4C8661-D842-443D-B324-5EA0119A14B4}
+	EndGlobalSection
+EndGlobal

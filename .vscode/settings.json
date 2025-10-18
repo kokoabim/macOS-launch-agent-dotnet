@@ -1,0 +1,15 @@
+{
+    "dotnet.defaultSolution": "${workspaceFolder}/Kokoabim.LaunchAgent.sln",
+    "files.exclude": {
+        "**/bin/": true,
+        "**/obj/": true
+    },
+    "cSpell.words": [
+        "AGENTNAME",
+        "bootout",
+        "CHANGEME",
+        "consoleapps",
+        "launchagent",
+        "launchagents"
+    ]
+}
