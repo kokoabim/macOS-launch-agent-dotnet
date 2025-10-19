@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Kokoabim.LaunchAgent\Kokoabim.LaunchAgent.csproj" />
-    <ProjectReference Include="..\..\..\Kokoabim.CommandLineInterface\tests\Kokoabim.CommandLineInterface.Tests\Kokoabim.CommandLineInterface.Tests.csproj" />
   </ItemGroup>
 
 </Project>

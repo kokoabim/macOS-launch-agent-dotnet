@@ -6,7 +6,8 @@ var runOnceCommand = new ConsoleCommand(
     titleText: "Run once",
     arguments: [
     ],
-    syncFunction: ctx => {
+    syncFunction: ctx =>
+    {
         LaunchAgentLogger.WriteLine("Running once");
         return 0;
     }
@@ -17,7 +18,8 @@ var startLoopingCommand = new ConsoleCommand(
     titleText: "Start looping",
     arguments: [
     ],
-    asyncFunction: async (ctx) => {
+    asyncFunction: async (ctx) =>
+    {
         LaunchAgentLogger.WriteLine("Starting loop");
         while (true)
         {

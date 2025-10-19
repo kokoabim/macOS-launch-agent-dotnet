@@ -1,0 +1,134 @@
+{
+    "copyDirectories": [
+        ".vscode",
+        "src",
+        "tests"
+    ],
+    "copyFiles": [
+        ".editorconfig",
+        ".gitignore",
+        "Kokoabim.LaunchAgent.sln",
+        "LICENSE.md",
+        "manage-launchagent.sh",
+        "me.swsj.launch-agent.plist",
+        "README.md",
+        "run.sh"
+    ],
+    "replaceInFiles": [
+        {
+            "src": ".vscode/launch.json",
+            "pattern": "Kokoabim\\.LaunchAgent",
+            "replacement": "{{project}}"
+        },
+        {
+            "src": ".vscode/launch.json",
+            "pattern": "AGENTNAME_CHANGEME",
+            "replacement": "{{name:lowercase}}"
+        },
+        {
+            "src": ".vscode/settings.json",
+            "pattern": "Kokoabim\\.LaunchAgent",
+            "replacement": "{{project}}"
+        },
+        {
+            "src": ".vscode/tasks.json",
+            "pattern": "Kokoabim\\.LaunchAgent",
+            "replacement": "{{project}}"
+        },
+        {
+            "src": "me.swsj.launch-agent.plist",
+            "pattern": "me\\.swsj\\.launch-agent",
+            "replacement": "{{label}}"
+        },
+        {
+            "src": "me.swsj.launch-agent.plist",
+            "pattern": "/opt/kokoabim",
+            "replacement": "{{deploy_dir}}"
+        },
+        {
+            "src": "me.swsj.launch-agent.plist",
+            "pattern": "AGENTNAME_CHANGEME",
+            "replacement": "{{name:lowercase}}"
+        },
+        {
+            "src": "**/*.cs",
+            "pattern": "Kokoabim\\.LaunchAgent",
+            "replacement": "{{project}}"
+        },
+        {
+            "src": "**/*.cs",
+            "pattern": "AGENTNAME_CHANGEME",
+            "replacement": "{{name:lowercase}}"
+        },
+        {
+            "src": "**/*.cs",
+            "pattern": "AGENTTITLE_CHANGEME",
+            "replacement": "{{title}}"
+        },
+        {
+            "src": "**/*.cs",
+            "pattern": "me.swsj.launch-agent",
+            "replacement": "{{label}}"
+        },
+        {
+            "src": "**/*.csproj",
+            "pattern": "Kokoabim\\.LaunchAgent",
+            "replacement": "{{project}}"
+        },
+        {
+            "src": "Kokoabim.LaunchAgent.sln",
+            "pattern": "Kokoabim\\.LaunchAgent",
+            "replacement": "{{project}}"
+        },
+        {
+            "src": "manage-launchagent.sh",
+            "pattern": "Kokoabim\\.LaunchAgent",
+            "replacement": "{{project}}"
+        },
+        {
+            "src": "manage-launchagent.sh",
+            "pattern": "/opt/kokoabim",
+            "replacement": "{{deploy_dir}}"
+        },
+        {
+            "src": "manage-launchagent.sh",
+            "pattern": "AGENTNAME_CHANGEME",
+            "replacement": "{{name:lowercase}}"
+        },
+        {
+            "src": "manage-launchagent.sh",
+            "pattern": "me\\.swsj\\.launch-agent",
+            "replacement": "{{label}}"
+        }
+    ],
+    "renameFiles": [
+        {
+            "src": "Kokoabim.LaunchAgent.sln",
+            "dest": "{{project}}.sln"
+        },
+        {
+            "src": "src/Kokoabim.LaunchAgent/Kokoabim.LaunchAgent.csproj",
+            "dest": "src/Kokoabim.LaunchAgent/{{project}}.csproj"
+        },
+        {
+            "src": "tests/Kokoabim.LaunchAgent.Tests/Kokoabim.LaunchAgent.Tests.csproj",
+            "dest": "tests/Kokoabim.LaunchAgent.Tests/{{project}}.Tests.csproj"
+        }
+    ],
+    "renameDirectories": [
+        {
+            "src": "src/Kokoabim.LaunchAgent",
+            "dest": "src/{{project}}"
+        },
+        {
+            "src": "tests/Kokoabim.LaunchAgent.Tests",
+            "dest": "tests/{{project}}.Tests"
+        }
+    ],
+    "deleteDirectories": [
+        "src/{{project}}/bin",
+        "src/{{project}}/obj",
+        "tests/{{project}}.Tests/bin",
+        "tests/{{project}}.Tests/obj"
+    ]
+}

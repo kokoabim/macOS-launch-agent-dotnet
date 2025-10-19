@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
@@ -13,15 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kokoabim.LaunchAgent", "src
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kokoabim.CommandLineInterface", "..\Kokoabim.CommandLineInterface\src\Kokoabim.CommandLineInterface\Kokoabim.CommandLineInterface.csproj", "{3AFF6C8D-16F2-4A6B-9D5B-54EE10B98B96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kokoabim.CommandLineInterface.Tests", "..\Kokoabim.CommandLineInterface\tests\Kokoabim.CommandLineInterface.Tests\Kokoabim.CommandLineInterface.Tests.csproj", "{358CCC67-4BD2-4736-B55A-8542D4373207}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{31DD3BE1-7A5D-4163-8246-17A1A22A893E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -36,10 +31,9 @@ Global
 		{3AFF6C8D-16F2-4A6B-9D5B-54EE10B98B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AFF6C8D-16F2-4A6B-9D5B-54EE10B98B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AFF6C8D-16F2-4A6B-9D5B-54EE10B98B96}.Release|Any CPU.Build.0 = Release|Any CPU
-		{358CCC67-4BD2-4736-B55A-8542D4373207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{358CCC67-4BD2-4736-B55A-8542D4373207}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{358CCC67-4BD2-4736-B55A-8542D4373207}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{358CCC67-4BD2-4736-B55A-8542D4373207}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{31DD3BE1-7A5D-4163-8246-17A1A22A893E} = {9A4888C9-DBDC-42F3-AED7-EAD63AA04853}

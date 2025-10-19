@@ -243,7 +243,7 @@ include_dotnet_runtime=false
 overwrite_targets=false
 package_single_file=true
 yes=false
-while getopts "${script_switches}${script_options}" opt; do
+while getopts ":${script_switches}${script_options}" opt; do
     case $opt in
     d) launchagents_base_dir="$OPTARG" ;;
     h) usage ;;
@@ -255,7 +255,8 @@ while getopts "${script_switches}${script_options}" opt; do
     r) dotnet_runtime="$OPTARG" ;;
     s) package_single_file=false ;;
     y) yes=true ;;
-    \?) usage ;;
+    :) end "Missing argument" >&2 ;;
+    \?) end "Invalid option" >&2 ;;
     esac
 done
 shift $((OPTIND - 1))
