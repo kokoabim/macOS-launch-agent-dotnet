@@ -42,7 +42,7 @@
         },
         {
             "src": "me.swsj.launch-agent.plist",
-            "pattern": "/opt/kokoabim",
+            "pattern": "\\/opt\\/kokoabim",
             "replacement": "{{deploy_dir}}"
         },
         {
@@ -76,24 +76,29 @@
             "replacement": "{{project}}"
         },
         {
+            "src": "**/*.csproj",
+            "pattern": "AGENTNAME_CHANGEME",
+            "replacement": "{{name:lowercase}}"
+        },
+        {
             "src": "Kokoabim.LaunchAgent.sln",
             "pattern": "Kokoabim\\.LaunchAgent",
             "replacement": "{{project}}"
         },
         {
-            "src": "manage-launchagent.sh",
+            "src": "*.sh",
             "pattern": "Kokoabim\\.LaunchAgent",
             "replacement": "{{project}}"
         },
         {
-            "src": "manage-launchagent.sh",
-            "pattern": "/opt/kokoabim",
-            "replacement": "{{deploy_dir}}"
+            "src": "*.sh",
+            "pattern": "AGENTNAME_CHANGEME",
+            "replacement": "{{name:lowercase}}"
         },
         {
             "src": "manage-launchagent.sh",
-            "pattern": "AGENTNAME_CHANGEME",
-            "replacement": "{{name:lowercase}}"
+            "pattern": "\\/opt\\/kokoabim",
+            "replacement": "{{deploy_dir}}"
         },
         {
             "src": "manage-launchagent.sh",
@@ -113,6 +118,10 @@
         {
             "src": "tests/Kokoabim.LaunchAgent.Tests/Kokoabim.LaunchAgent.Tests.csproj",
             "dest": "tests/Kokoabim.LaunchAgent.Tests/{{project}}.Tests.csproj"
+        },
+        {
+            "src": "me.swsj.launch-agent.plist",
+            "dest": "{{label}}.plist"
         }
     ],
     "renameDirectories": [

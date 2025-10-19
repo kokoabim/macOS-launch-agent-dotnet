@@ -311,6 +311,8 @@ function delete_directories() {
         deleteDirectory=$(jq -r ".deleteDirectories[$i]" "$json_config_path")
         dir_to_delete="$project_dir/$deleteDirectory"
 
+        dir_to_delete=$(expand_placeholders "$dir_to_delete")
+
         if [[ "$dry_run" == "" ]] && [[ ! -d "$dir_to_delete" ]]; then
             echo "[DeleteDirectory] Directory not found: $dir_to_delete"
             continue
@@ -335,13 +337,13 @@ function get_platform() {
 function expand_placeholders() { # 1: string
     local value="$1"
 
-    value="${value//\{\{deploy_dir\}\}/$deploy_dir}"
+    value="${value//\{\{deploy_dir\}\}/$deploy_dir_escaped}"
     value="${value//\{\{label\}\}/$launchagent_label}"
     value="${value//\{\{name:lowercase\}\}/$launchagent_name_lowercase}"
     value="${value//\{\{name\}\}/$launchagent_name}"
     value="${value//\{\{organization\}\}/$org_id}"
     value="${value//\{\{project\}\}/$project_name}"
-    value="${value//\{\{project_dir\}\}/$project_dir}"
+    value="${value//\{\{project_dir\}\}/$project_dir_escaped}"
     value="${value//\{\{title\}\}/$launchagent_title}"
 
     echo "$value"
@@ -393,6 +395,9 @@ elif [[ ! "$launchagent_name" =~ ^[A-Z][a-zA-Z0-9_]+[a-zA-Z0-9]$ ]]; then
 elif [[ ! "$org_id" =~ ^[a-z0-9]+(\.[a-z0-9-]+)*$ ]]; then
     end "Invalid organization identifier '$org_id'. Must be a valid reverse domain (e.g. com.example, net.example)." 1
 fi
+
+deploy_dir_escaped="${deploy_dir//\//\\/}"
+project_dir_escaped="${project_dir//\//\\/}"
 
 template_source_dir=$(realpath "$template_source_dir")
 json_config_path="$template_source_dir/$json_config_path"
